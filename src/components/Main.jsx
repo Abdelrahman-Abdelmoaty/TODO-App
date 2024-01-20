@@ -66,17 +66,7 @@ export default function Main() {
       <div className="head">TO-DO App</div>
       <div className="container">
         {ToDoS.map((item) => {
-          return (
-            <ToDoItem
-              key={item.id}
-              id={item.id}
-              text={item.text}
-              handleDelete={handleDelete}
-              handleCheck={handleCheck}
-              handleEdit={handleEdit}
-              checked={item.checked}
-            />
-          );
+          return <ToDoItem key={item.id} id={item.id} text={item.text} handleDelete={handleDelete} handleCheck={handleCheck} handleEdit={handleEdit} checked={item.checked} />;
         })}
       </div>
       <div>
@@ -89,8 +79,10 @@ export default function Main() {
               setNewToDoText(e.target.value);
             }}
           />
-          <button onClick={handleAdd}>Add</button>
-          <button onClick={handleDefault}>Default</button>
+          <div className="bottomBtns">
+            <button onClick={handleAdd}>Add</button>
+            <button onClick={handleDefault}>Default</button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 #main {
-  padding: 5% 10%;
-  width: 45vw;
-  min-height: 70vh;
+  padding: 2rem;
+  min-width: 45vw;
+  min-height: 80vh;
   border-radius: 0.5%;
   background-color: #eeeeee;
   display: flex;
@@ -16,10 +16,11 @@
 }
 
 .head {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   padding-bottom: 5%;
+  margin-bottom: auto;
 }
 
 .bottom {
@@ -27,12 +28,13 @@
   justify-content: center;
   margin-top: 5%;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.bottom button {
-  padding: 0 2%;
+.bottomBtns button {
+  padding: 0 1rem;
   border-radius: 5%;
   font-family: "Bangers";
-  margin: 0 1%;
   font-size: 1.2rem;
   color: white;
   background-color: black;
@@ -41,17 +43,16 @@
   height: 3rem;
 }
 
-.bottom button:hover {
+.bottomBtns button:hover {
   background-color: white;
   color: black;
 }
 .newToDoField {
-  width: 50%;
-  height: 2rem;
   font-family: "Bangers";
   font-size: 1.8rem;
   padding: 1%;
   resize: vertical;
+  min-width: 50%;
 }
 .x {
   display: block;
@@ -61,4 +62,10 @@
   min-height: 40px;
   line-height: 20px;
   background-color: #fff;
+}
+
+.bottomBtns {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
 }

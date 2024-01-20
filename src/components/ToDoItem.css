@@ -5,6 +5,7 @@
   word-wrap: break-word;
   overflow: hidden;
   cursor: pointer;
+  min-width: 50%;
 }
 
 .toDoItemText:hover {
@@ -13,7 +14,8 @@
 #toDoItem {
   display: flex;
   align-items: center;
-  font-size: 3.5rem;
+  font-size: 2rem;
+  flex-wrap: wrap;
 }
 .done {
   text-decoration: line-through;
@@ -29,14 +31,13 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 .toDoItemBtns button {
-  margin-left: 5%;
-  width: 5rem;
-  height: 2.5rem;
+  margin-left: 0.5rem;
   border-radius: 5%;
-  padding: 3%;
+  padding: 0.5rem;
   font-size: 1.2rem;
   font-family: "Bangers";
   cursor: pointer;

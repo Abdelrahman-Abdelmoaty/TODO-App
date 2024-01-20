@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import "./ToDoItem.css";
 
-export default function ToDoItem({
-  id,
-  text,
-  handleDelete,
-  handleEdit,
-  handleCheck,
-  checked,
-}) {
+export default function ToDoItem({ id, text, handleDelete, handleEdit, handleCheck, checked }) {
   const [isBeingEdited, setIsBeingEdited] = useState(false);
   const [te, setTe] = useState(text);
 
@@ -20,9 +13,7 @@ export default function ToDoItem({
         }}
         suppressContentEditableWarning={true}
         contentEditable={isBeingEdited}
-        className={`${checked ? "done" : ""} ${
-          isBeingEdited ? "beingEdited" : ""
-        }  toDoItemText`}
+        className={`${checked ? "done" : ""} ${isBeingEdited ? "beingEdited" : ""}  toDoItemText`}
         onInput={(e) => {
           setTe(e.target.textContent);
         }}
